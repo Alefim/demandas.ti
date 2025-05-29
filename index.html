@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard de TI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  import <chart class="js"></chart>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Dashboard de Demandas de TI</h1>
+
+    <div class="nova-demanda">
+      <input type="text" id="inputDemanda" placeholder="Nova demanda..." />
+      <button onclick="adicionarDemanda()">Adicionar</button>
+    </div>
+
+    <div class="grafico">
+      <canvas id="graficoDemandas" width="400" height="200"></canvas>
+    </div>
+
+    <div class="listas">
+      <div class="coluna" id="pendente">
+        <h2>Pendentes</h2>
+        <div class="lista" id="listaPendente"></div>
+      </div>
+      <div class="coluna" id="andamento">
+        <h2>Em Andamento</h2>
+        <div class="lista" id="listaAndamento"></div>
+      </div>
+      <div class="coluna" id="concluida">
+        <h2>Concluídas</h2>
+        <div class="lista" id="listaConcluida"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
